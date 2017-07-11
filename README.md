@@ -6,8 +6,8 @@
 
 ## Installation
 1. Clone the shellgame repo:
-   *`git clone https://github.com/srinitude/shellgame.git` (HTTPS)
-   *`git clone git@github.com:srinitude/shellgame.git` (SSH)
+   - `git clone https://github.com/srinitude/shellgame.git` (HTTPS)
+   - `git clone git@github.com:srinitude/shellgame.git` (SSH)
 2. Change your working directory to shellgame: `cd shellgame`
 3. Start the test suite: `./init.sh [your github username]`
 
