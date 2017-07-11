@@ -1,5 +1,16 @@
 # Shellgame
 
+## Table of Contents
+* [Installation](#installation)
+* [Submissions](#submissions)
+
+## Installation
+1. Clone the shellgame repo:
+`git clone https://github.com/srinitude/shellgame.git` (HTTPS)
+`git clone git@github.com:srinitude/shellgame.git` (SSH)
+2. Change your working directory to shellgame: `cd shellgame`
+3. Start the test suite: `./init.sh [your github username]`
+
 ## Submissions
 Before adding test cases, follow this procedure so that the master branch doesn't get corrupted:
 1. Check which branch you're currently on (`git branch`). A star will indicate which branch you're on.
