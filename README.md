@@ -11,7 +11,3 @@ Before adding test cases, follow this procedure so that the master branch doesn'
 7. Push that branch, not to master (`git push [test-case]`)
 8. Open a pull request on Github.
 9. Slack the sf-0517 channel with the link to the pull request and have someone merge to master for you.
-
-## Test Ideas
-   * 0.0.1
-     * Use "<<" (here doc) to use as standard input to test EOF
