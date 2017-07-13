@@ -1,0 +1,14 @@
+# Configurations
+
+TESTDIR="."
+R=$RANDOM
+OUTPUTFILE="youroutput.txt"
+EXPECTED="expected.txt"
+DIFF="diff.txt"
+ERROROUTPUTFILE="error.txt"
+ERROREXPECTED="errorexpected.txt"
+HSH="./hsh"
+SLEEP=`which sleep`
+SLEEPSECONDS=1
+LTRACE=`which ltrace`
+LTRACEOUTPUTFILE="checker_ltrace_output_$R"

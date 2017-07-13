@@ -17,8 +17,9 @@ Before adding test cases, follow this procedure so that the master branch doesn'
 2. If you're on a branch other than master, checkout to master (`git checkout master`)
 3. Pull the most updated verison of master before adding your test cases (`git pull origin master`)
 4. Checkout a branch for the case(s) you want to add (`git checkout -b [test-case]`)
-5. Add your test cases(s) to the README.
-6. Add and commit your changes.
-7. Push that branch, not to master (`git push [test-case]`)
+5. Add your test case(s) to the directory related to the specific task..
+6. Add and commit your change(s).
+7. Push that branch, not to master (`git push origin [test-case]`)
 8. Open a pull request on Github.
 9. Slack the sf-0517 channel with the link to the pull request and have someone merge to master for you.
+10. Delete the branch you committed and pushed after merging to master.

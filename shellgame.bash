@@ -1,3 +1,8 @@
 #!/bin/bash
 
-echo "Shellgame executed"
+###################################
+
+
+
+# Load the configuration file
+source config
