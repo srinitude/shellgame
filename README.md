@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Installation](#installation)
 * [Submissions](#submissions)
-
+* 1 -/bin/ls
 ## Installation
 1. Clone the shellgame repo:
    - `git clone https://github.com/srinitude/shellgame.git` (HTTPS)
