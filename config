@@ -12,3 +12,8 @@ SLEEP=`which sleep`
 SLEEPSECONDS=1
 LTRACE=`which ltrace`
 LTRACEOUTPUTFILE="checker_ltrace_output_$R"
+
+# Testing color scheme
+RED="\e[31m"
+GREEN="\e[92m"
+RESET="\e[0m"
