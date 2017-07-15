@@ -72,7 +72,7 @@ function clean_up()
 
 function stop_shell()
 {
-    if [ $(pidof "$SHELL" | wc -l) -gt 0]; then
+    if [ $(pidof "$SHELL" | wc -l) -gt 0 ]; then
 	source "$dir$testname"
     fi
     clean_up
