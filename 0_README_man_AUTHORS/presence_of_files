@@ -1,0 +1,26 @@
+#!/bin/bash
+
+README=""$TESTDIR"README.md"
+MAN_PAGE=""$TESTDIR"man_1_simple_shell"
+AUTHORS=""$TESTDIR"AUTHORS"
+
+echo -n "Presence of a README:\n"
+if [ -s "$README" ]; then
+    print_pass
+else
+    print_fail
+fi
+
+echo -n "Presence of a man page:\n"
+if [ -s "$MAN_PAGE" ]; then
+    print_pass
+else
+    print_fail
+fi
+
+echo -n "Presence of an AUTHORS page:\n"
+if [ -s "$AUTHORS" ]; then
+    print_pass
+else
+    print_fail
+fi

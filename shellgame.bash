@@ -35,7 +35,7 @@ function diff_error()
 function print_diff()
 {
     if [ $1 == $OUTPUT_DIFF ]; then
-	if [ -s $1 ]; then
+	if [ -s "$1" ]; then
 	    print_fail
 	    echo "The output between your shell and 'sh' differ"
 	    cat "$DIFF"
@@ -43,7 +43,7 @@ function print_diff()
 	    print_pass
 	fi
     elif [ $1 == $ERROR_DIFF ]; then
-	if [ -s $1 ]; then
+	if [ -s "$1" ]; then
 	    print_fail
 	    echo "The errors between your shell and 'sh' differ"
 	    cat "$DIFF"
