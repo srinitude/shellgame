@@ -11,11 +11,14 @@ git clone https://github.com/"$1"/simple_shell $USER_REPO
 # Create your executable
 gcc -Wall -Werror -Wextra -pedantic $USER_REPO/*.c -o hsh
 
+# Move executable, README, man page, and AUTHORS into the test suite
+cp man_1_simple_shell man_1_simple_shell_copy
+cp README.md SHELL-README.md
+cp AUTHORS SHELL-AUTHORS
+mv hsh SHELL-README.md man_1_simple_shell_copy SHELL-AUTHORS shellgame
+
 # Remove unneeded source code
 rm -rf $USER_REPO
-
-# Move executable, README, man page, and AUTHORS into the test suite
-mv hsh README.md man_1_simple_shell AUTHORS shellgame
 
 # Change your working directory to the test suite
 cd shellgame

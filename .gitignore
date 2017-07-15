@@ -1,0 +1,13 @@
+error_diff.txt
+expected_error.txt
+expected_output.txt
+hsh
+man_1_simple_shell
+output_diff.txt
+your_error.txt
+your_output.txt
+*~
+#*#
+*AUTHORS
+*README.md
+man_1_simple_shell*

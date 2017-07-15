@@ -55,11 +55,6 @@ function print_diff()
     fi
 }
 
-function check_for_prohibited_function()
-{
-
-}
-
 function clean_up()
 {
     > "$YOUR_OUTPUT" && > "$EXPECTED_OUTPUT"
@@ -84,9 +79,10 @@ function launch_tests()
     do
 	for testname in $(ls "$dir" | grep -v "~$")
 	do
-	    cat "${dir}${testname}" | head -3 | tail -1
-	    echo -n "test -> $testname: "
+	    echo "---------------------------------"
+	    echo "Test for $dir$testname: "
 	    source "$dir$testname"
+	    echo "---------------------------------"
 	done
     done
 }
