@@ -49,6 +49,7 @@ function print_diff()
 	    cat "$DIFF"
 	else
 	    print_pass
+	fi
     else
 	echo -n "What are you diffing dude?\n"
     fi
