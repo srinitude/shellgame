@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# check if the  simple shell tracks your history
+
+command="ls"
+
+# clean up
+stop_shell
+
+# create a file
+emacs $test_file
+
+# send commands
+cat $HOME/simple_shell_history | grep "ls" > $OUTPUTFILE"
+echo "ls" > "$EXPECTED"
+
+# wait
+"$SLEEP" "$SLEEPSECONDS"
+
+# check result
+check_diff
+
+# print error
+print_error
+
+#clean up
+stop_shell
