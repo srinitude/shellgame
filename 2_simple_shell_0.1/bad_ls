@@ -1,5 +1,0 @@
-#!/bin/bash
-#
-# Bad ls to be used for testing
-
-echo "You have used a bad ls"
