@@ -1,23 +1,18 @@
 #!/bin/bash
 
-smiley=":)"
-command="echo $smiley"
+# Initialize command
+command="ls -la /bin"
 
 # Clean up
 stop_shell
 
-# Run command
+# Run commands on your shell and Thompson Shell
 echo "$command" | "$SHELL" > "$YOUR_OUTPUT" 2> "$YOUR_ERROR" &
 echo "$command" | sh > "$EXPECTED_OUTPUT" 2> "$EXPECTED_ERROR"
 
-# Wait for one second
-"$SLEEP" "$SLEEPSECONDS"
-
-# Check the output
+# Check the output and error
 check_output
-
-# Check the errors
 check_error
 
-# Clean up
+# Clean up again
 stop_shell
