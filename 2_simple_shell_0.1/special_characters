@@ -1,2 +1,12 @@
 #!/bin/bash
+#
+# check how special characters are handled
+
+#create command
 echo Special Characters > '\*\\'"'\"Special Characters\"\'"'\\*$\?\*\*\*\*\*:)'
+
+# wait
+"$SLEEP" "$SLEEPSECONDS"
+
+#clean up
+stop_shell
