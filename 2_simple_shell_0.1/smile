@@ -1,2 +1,18 @@
 #!/bin/bash
-echo '"(Ôo)'\'
+#
+# check to see how special characters are handled
+
+#send commands
+echo "echo '"(Ôo)'\'"
+
+# wait
+"$SLEEP" "$SLEEPSECONDS"
+
+# check result
+check_output
+
+# print error
+check_error
+
+#clean up
+stop_shell
