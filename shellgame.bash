@@ -63,6 +63,7 @@ function clean_up()
     rm -f "$HOME"/.simple_shell_history
     rm -f "$LTRACEOUTPUTFILE"
     rm -f checker_tmp_file_*
+    rm -f checker_cat_file_*
 }
 
 function stop_shell()
