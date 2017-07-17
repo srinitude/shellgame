@@ -2,26 +2,27 @@
 #
 # check if the  simple shell tracks your history
 
-command="ls"
+command="history"
+tmp_file="checker_tmp_file_$R"
 
 # clean up
 stop_shell
 
-# create a file
-emacs $test_file
+# create a pseudo-random file
+echo "$command" > $tmp_file
 
 # send commands
-cat $HOME/simple_shell_history | grep "ls" > $OUTPUTFILE"
-echo "ls" > "$EXPECTED"
+cat $tmp_file | "$SHELL" > "$YOUR_OUTPUT" 2> "$YOUR_ERROR" &
+cat $tmp_file | sh > "$EXPECTED_OUTPUT" 2> "$EXPECTED_ERROR"
 
 # wait
 "$SLEEP" "$SLEEPSECONDS"
 
 # check result
-check_diff
+check_output
 
 # print error
-print_error
+check_error
 
 #clean up
 stop_shell
