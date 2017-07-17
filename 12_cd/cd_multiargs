@@ -1,0 +1,22 @@
+#!/bin/bash
+
+command1="cd /bin /tmp slkfjl"
+
+# Stop any running shells
+stop_shell
+
+# Run command
+echo $command$'\n'pwd | "$SHELL" > "$YOUR_OUTPUT" 2> "$YOUR_ERROR" &
+echo $command$'\n'pwd | sh > "$EXPECTED_OUTPUT" 2> "$EXPECTED_ERROR"
+
+# Wait for one second
+"$SLEEP" "$SLEEPSECONDS"
+
+# Check the output
+check_output
+
+# Check the errors
+check_error
+
+# Clean up
+stop_shell
