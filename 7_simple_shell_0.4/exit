@@ -7,7 +7,7 @@ command="exit"
 stop_shell
 
 # Run commands
-echo "$command" | "$SHELL"
+echo "$command" | "$SHELL" &
 echo "$?" > "$YOUR_OUTPUT" 2> "$YOUR_ERROR"
 
 echo "$command" | sh
