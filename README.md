@@ -23,3 +23,6 @@ Before adding test cases, follow this procedure so that the master branch doesn'
 8. Open a pull request on Github.
 9. Slack the sf-0517 channel with the link to the pull request and have someone merge to master for you.
 10. Delete the branch you committed and pushed after merging to master.
+
+## Credits
+Thanks to everyone who contributed! The contributors are listed in the [AUTHORS](https://github.com/srinitude/shellgame/blob/master/AUTHORS) page.
